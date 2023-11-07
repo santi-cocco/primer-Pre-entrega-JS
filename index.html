@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Loyal | Tu madera a tu medida</title>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <img src="imagenes/Logo1.png" alt="foto de madera-a-medida" style="width: 750px; height:200px;">
+      <li><a class="active" href="index.html">Madera a medida</a></li>
+      <li><a class="active" href="../html/Como.comprar.html">Cómo comprar</a></li>
+      <li><a class="active" href="../html/Informacio.envio.html">Información de envío</a></li>
+      <li><a class="active" href="../html/Contacto.html">Contacto</a></li>
+      <li><a class="active" href="../html/Estado.html">Estado de pedido</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenedor">
+    <section id="madera-a-medida" class="seccion">
+      <h2 class="titulo">Madera a medida</h2>
+      <hr>
+      <ol>
+        <li>Elige el tipo de madera:</li>
+        <br>
+        <div class="input-group">
+          <select id="tipo-madera">
+            <optgroup label="Maderas Blandas">
+              <option value="abedul">Abedul ($18/m²)</option>
+              <option value="aliso">Aliso ($12/m²)</option>
+              <option value="caoba">Caoba ($15/m²)</option>
+              <option value="ciprés">Ciprés ($8/m²)</option>
+              <option value="pino">Pino ($80/m²)</option>
+              <option value="abeto">Abeto ($7/m²)</option>
+              <option value="cedro">Cedro ($9/m²)</option>
+            </optgroup>
+            <optgroup label="Maderas Duras">
+              <option value="haya">Haya ($18/m²)</option>
+              <option value="roble">Roble ($20/m²)</option>
+              <option value="nogal">Nogal ($22/m²)</option>
+              <option value="guatambú">Guatambú ($17/m²)</option>
+              <option value="incienso">Incienso ($19/m²)</option>
+              <option value="acacia">Acacia ($16/m²)</option>
+              <option value="teca">Teca ($25/m²)</option>
+            </optgroup>
+          </select>
+        </div>
+        <br>
+        <li>Elige las medidas:</li>
+        <br>
+        <div class="input-group">
+          <label for="largo">Largo (mm):</label>
+          <input type="text" id="largo">
+        </div>
+        <div class="input-group">
+          <label for="ancho">Ancho (mm):</label>
+          <input type="text" id="ancho">
+        </div>
+        <br>
+        <li>Cantos:</li>
+        <br>
+        <div class="input-group">
+          <label for="cantos">Elige el o los cantos que necesitas en tu corte (en caso de no ser necesario, dejar en
+            blanco)</label>
+          <div>
+            <label for="canto-superior">Superior</label>
+            <input type="checkbox" id="canto-superior" name="cantos" value="top">
+          </div>
+          <div>
+            <label for="canto-inferior">Inferior</label>
+            <input type="checkbox" id="canto-inferior" name="cantos" value="bottom">
+          </div>
+          <div>
+            <label for="canto-izquierdo">Izquierdo</label>
+            <input type="checkbox" id="canto-izquierdo" name="cantos" value="left">
+          </div>
+          <div>
+            <label for="canto-derecho">Derecho</label>
+            <input type="checkbox" id="canto-derecho" name="cantos" value="right">
+          </div>
+          <div class="cuadrado">
+            <div class="line line-top"></div>
+            <div class="line line-right"></div>
+            <div class="line line-bottom"></div>
+            <div class="line line-left"></div>
+            <div class="total">Total: <span id="total"></span></div>
+          </div>
+        </div>
+        <br>
+        <li>¿Cuantas unidades quieres?</li>
+      </ol>
+      <div class="input-group">
+        <label id="cantidad" for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad">
+      </div>
+      <br>
+      <button id="agregar-carrito">Agregar al carrito</button>
+      <button id="realizar-cotizacion">Realizar Cotización</button>
+      <button id="reiniciar-carrito">Reiniciar Carrito</button>
+      <div id="carrito"></div>
+    </section>
+  </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Información de contacto</h4>
+        <p>Teléfono: 223-5064387</p>
+        <p>Correo electrónico: Loyalmaderas.mdp@gmail.com</p>
+        <p>Dirección: Calle Ejemplo, 123</p>
+      </div>
+      <div class="footer-column">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="html/Como.comprar.html">Nuestro servicio</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Todos los derechos reservados &copy; 2023</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
