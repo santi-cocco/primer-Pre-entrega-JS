@@ -36,7 +36,10 @@ nav {
   padding: 0;
   text-align: center; 
 }
-
+.menu .imagen-home{
+  max-width: 100%;
+  height:200px;
+} 
 .menu li {
   display: inline-block;
   margin-right: 10px;
